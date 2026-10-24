@@ -3,20 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- ЗАМЕНИТЬ при необходимости: title, description и og-теги (SEO) -->
-<title>LaunchScript — сайты и Telegram-боты под ключ</title>
+<title>LaunchScript — цифровые проекты под ключ</title>
 <meta name="description" content="LaunchScript: делаю сайты, Telegram-ботов и автоматизацию заявок для малого бизнеса. От структуры и текстов до размещения в интернете.">
 <meta property="og:title" content="LaunchScript — сайты и Telegram-боты под ключ">
 <meta property="og:description" content="Сайты и Telegram-боты, которые приносят заявки. Всё под ключ: от идеи до запуска.">
 <meta property="og:type" content="website">
-<!-- ЗАМЕНИТЬ после публикации: <meta property="og:url" content="https://ВАШ-НИК.github.io/РЕПОЗИТОРИЙ/"> -->
 <meta name="theme-color" content="#070B16">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
 <style>
-/* Тема: тёмная. Тёмный фон с бирюзово-фиолетовым свечением выглядит дороже и «технологичнее»,
-   а акцентные кнопки на нём заметнее всего — это повышает переходы в Telegram. */
 :root{
   --bg:#070B16; --surface:#0F1629; --line:rgba(255,255,255,.09);
   --text:#E8ECF8; --muted:#9AA5C4; --teal:#2DE2C4; --violet:#7C5CFF;
@@ -42,7 +38,7 @@ h2{font-size:clamp(28px,5vw,44px);font-weight:800;margin-bottom:14px}
 .btn-ghost:hover{border-color:var(--teal);transform:translateY(-3px)}
 .btn-sm{min-height:42px;padding:0 20px;font-size:15px}
 
-/* шапка */
+
 header{position:fixed;inset:0 0 auto 0;z-index:50;background:rgba(7,11,22,.78);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
 .bar{display:flex;align-items:center;justify-content:space-between;height:68px}
 .logo{font-weight:800;font-size:22px;letter-spacing:-.02em}
@@ -57,7 +53,7 @@ nav a:hover{color:var(--text)}
 .burger[aria-expanded=true] i::before{top:0;transform:rotate(45deg)}
 .burger[aria-expanded=true] i::after{top:0;transform:rotate(-45deg)}
 
-/* hero */
+
 .hero{position:relative;min-height:100svh;display:flex;align-items:center;padding:120px 0 80px;overflow:hidden}
 .blob{position:absolute;border-radius:50%;filter:blur(90px);opacity:.5;pointer-events:none;will-change:transform}
 .b1{width:480px;height:480px;background:var(--violet);top:-120px;right:-120px;animation:float 14s ease-in-out infinite}
@@ -72,7 +68,7 @@ nav a:hover{color:var(--text)}
 @keyframes rise{from{opacity:0;transform:translateY(30px)}}
 .hero .wrap>div:first-child{animation:rise 1s both}
 
-/* услуги */
+
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:28px;transition:transform .3s,border-color .3s,box-shadow .3s}
 .card:hover{transform:translateY(-6px);border-color:rgba(45,226,196,.5);box-shadow:0 18px 50px rgba(124,92,255,.18)}
@@ -81,18 +77,17 @@ nav a:hover{color:var(--text)}
 .card h3{font-size:20px;margin-bottom:10px}
 .card p{color:var(--muted);font-size:15.5px}
 
-/* почему я */
+
 .why{background:linear-gradient(180deg,transparent,rgba(124,92,255,.07),transparent)}
 .why .grid{grid-template-columns:repeat(2,1fr)}
 .why .card{display:flex;gap:18px}
 .tick{flex:none;width:34px;height:34px;border-radius:50%;background:var(--grad);display:grid;place-items:center}
 .tick svg{width:18px;height:18px;stroke:#05080F;fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
 
-/* обо мне */
 .about{max-width:760px}
 .about p{color:var(--muted);font-size:clamp(17px,2.4vw,20px)}
 
-/* отзывы */
+
 .slider{position:relative}
 .track{--cw:min(520px,72vw);position:relative;display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:18px calc((100% - var(--cw))/2) 28px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
 .track::-webkit-scrollbar{display:none}
@@ -107,14 +102,14 @@ nav a:hover{color:var(--text)}
 .nav.p{left:0}.nav.n{right:0}
 .nav svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
 
-/* контакты */
+
 .cta{text-align:center;background:var(--surface);border:1px solid var(--line);border-radius:32px;padding:clamp(40px,8vw,80px) var(--pad);position:relative;overflow:hidden}
 .cta::before{content:"";position:absolute;width:420px;height:420px;border-radius:50%;background:var(--violet);filter:blur(110px);opacity:.28;top:-220px;left:50%;transform:translateX(-50%)}
 .cta>*{position:relative}
 .cta .lead{margin:0 auto 30px}
 .handle{display:block;font-size:clamp(24px,5vw,38px);font-weight:800;margin-bottom:28px;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 
-/* подвал */
+
 footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-size:15px}
 footer .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
 footer .btn{min-height:40px;padding:0 18px;font-size:14px}
@@ -122,11 +117,11 @@ footer .btn{min-height:40px;padding:0 18px;font-size:14px}
 .top.on{opacity:1;pointer-events:auto;transform:none}
 .top svg{width:22px;height:22px;stroke:#05080F;fill:none;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
 
-/* появление при скролле */
+
 .rv{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
 .rv.in{opacity:1;transform:none}
 
-/* планшет и мобильные */
+
 @media (max-width:960px){
   .grid{grid-template-columns:repeat(2,1fr)}
   .hero .wrap{grid-template-columns:1fr}
@@ -182,7 +177,7 @@ footer .btn{min-height:40px;padding:0 18px;font-size:14px}
         <a class="btn btn-ghost" href="#services">Посмотреть услуги</a>
       </div>
     </div>
-    <!-- абстрактная графика: окно браузера + чат-бот -->
+
     <svg class="art" viewBox="0 0 400 400" role="img" aria-label="Иллюстрация: сайт и чат-бот">
       <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2DE2C4"/><stop offset="1" stop-color="#7C5CFF"/></linearGradient></defs>
       <rect x="30" y="50" width="280" height="210" rx="22" fill="#0F1629" stroke="rgba(255,255,255,.14)"/>
@@ -336,7 +331,7 @@ footer .btn{min-height:40px;padding:0 18px;font-size:14px}
     cards.forEach(function(c,i){var x=Math.abs(c.offsetLeft+c.offsetWidth/2-mid);if(x<d){d=x;best=i}});
     cur=best;cards.forEach(function(c,i){c.classList.toggle('active',i===best)});
   }
-  // после остановки незаметно возвращаемся в средний набор карточек
+
   function recenter(){
     if(cur>=n&&cur<2*n)return;
     var t=n+(cur%n);
